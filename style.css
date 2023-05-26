@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --Light-grayish-cyan: #c5e4e7;
+    --White: #ffffff;
+    --Very-dark-grayish-cyan: #5e7a7d;
+    --Very-light-grayish-cyan: #F3F9FA;
+    --Very-dark-cyan: #00474b;
+    --Strong-cyan: #26c2ae;
+    --Dark-grayish-cyan: #7f9d9f;
+    --Soft-red: #e17457;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Light-grayish-cyan);
+}
+
+.logo {
+    padding: 50px 0 40px;
+}
+
+.logo-image {
+    margin: auto;
+    display: block;
+}
+
+.tip-calculator {
+    background-color: var(--White);
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.part-one {
+    padding: 32px 32px 0;
+}
+
+label {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--Very-dark-grayish-cyan);
+}
+
+.part-one-top, .part-one-bottom {
+    position: relative;
+    margin: 6px 0 32px;
+}
+
+.dollar-icon, .person-icon {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.input-bill, .input-number-people {
+    width: 311px;
+    height: 48px;
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
+    color: var(--Very-dark-cyan);
+    padding-right: 10px;
+}
+
+.tip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16.56px;
+    margin: 16px 0 32px;
+}
+
+.button-percent {
+    width: 146.63px;
+    height: 48px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--White);
+}
+
+.custom-input {
+    width: 147.81px;
+    height: 48px;
+    background-color: var(--Very-light-grayish-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    color: #547878;
+    border: none;
+    text-align: center;
+}
+
+.part-two {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 15px;
+    margin: 0 24px;
+    padding: 37px 22px 24px 24px;
+}
+
+.part-two-header {
+    margin-bottom: 32px;
+}
+
+p {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--White);
+}
+
+.total-ph {
+    margin-top: 25px;
+}
+
+span {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--Dark-grayish-cyan);
+}
+
+.tip-amount-numbers {
+    width: 96px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.666667px;
+    color: var(--Strong-cyan);
+    position: absolute;
+    top: 73.5%;
+    left: 68%;
+}
+
+.total-numbers {
+    width: 96px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.666667px;
+    color: var(--Strong-cyan);
+    position: absolute;
+    top: 80%;
+    left: 68%;
+}
+
+.reset-all {
+    background: var(--Strong-cyan);
+    border-radius: 5px;
+    border: none;
+    width: 281px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        padding: 87px 0 50px;
+    }
+    
+    .logo-image {
+        margin: auto;
+        display: block;
+    }
+
+    .tip-calculator {
+        width: 920px;
+        flex-direction: row;
+        border-radius: 25px;
+        padding-bottom: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .part-one {
+        padding: 45px 48px 8px;
+    }
+
+    .part-one-top, .part-one-bottom {
+        position: relative;
+        margin: 6px 0 40px;
+    }
+    
+    .dollar-icon, .person-icon {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+    
+    .input-bill, .input-number-people {
+        width: 379px;
+    }
+    
+    .tip-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin: 16px 0 40px;
+    }
+    
+    .button-percent {
+        width: 117px;
+    }
+    
+    .custom-input {
+        width: 118px;
+    }
+    
+    .part-two {
+        margin: 32px 32px 32px 0;
+    }
+
+    .part-two-header {
+        margin-bottom: 133px;
+    }
+    
+    .total-ph {
+        margin-top: 53px;
+    }
+
+    .tip-amount-numbers {
+        top: 13%;
+        left: 84.5%;
+    }
+
+    .total-numbers {
+        top: 30%;
+        left: 84.5%;
+    }
+    
+    
+    .reset-all {
+        background-color: #0d686d;
+        width: 333px;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: var(--Very-dark-cyan);
+        text-transform: uppercase;
+    }
+}
+

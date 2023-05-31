@@ -123,6 +123,21 @@ label {
     border-radius: 5px;
 }
 
+.row-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eror-div p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E17457;
+    display: none;
+}
+
 .part-two {
     background-color: var(--Very-dark-cyan);
     border-radius: 15px;
